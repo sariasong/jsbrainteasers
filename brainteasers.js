@@ -56,3 +56,12 @@ function findLongestWord(str) {
   return longestWord;
 }
 console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+
+//Vowel Count//
+
+function getVowels(str) {
+  var m = str.match(/[aeiou]/gi);
+  return m === null ? 0 : m.length;
+}
+
+console.log(getVowels("the quick brown fox jumped over the lazy dog"));
